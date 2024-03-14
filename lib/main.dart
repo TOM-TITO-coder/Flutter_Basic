@@ -1,10 +1,7 @@
 // ignore_for_file: prefer_const_constructors
 
+import 'package:basic/home.dart';
 import 'package:flutter/material.dart';
-
-// ================== directory ===================
-import 'home.dart';
-
 
 void main() => runApp(const MyApp());
 
@@ -15,7 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(primaryColor: Colors.blueAccent),
+      theme: ThemeData.dark(),
       home: Home(),
     );
   }
