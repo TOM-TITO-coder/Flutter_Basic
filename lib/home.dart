@@ -1,6 +1,5 @@
 // ignore_for_file: prefer_const_constructors
-
-import 'package:basic/detail_app.dart';
+import 'app_detail.dart';
 import 'package:flutter/material.dart';
 
 class Home extends StatelessWidget {
@@ -10,9 +9,11 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Sum Value"),
+        title: Text("Reorder ListView"),
       ),
-      body: DetailApp(),
+      body: SafeArea(
+        child: AppDetail(),
+      ),
     );
   }
 }
