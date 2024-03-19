@@ -9,7 +9,7 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Reorder ListView"),
+        title: Text("Reorder Slidable"),
       ),
       body: SafeArea(
         child: AppDetail(),
